@@ -110,8 +110,12 @@ section{
     text-align: left;
     width: 300px;
     height: 520px;
-
     transition: transform .1s;
+}
+
+.boite img {
+    width: 300px;
+    height: 300px;
 }
 
 .boite:hover{
@@ -126,6 +130,7 @@ section{
     text-decoration: none;
     color: inherit;
 }
+
 table td {
     text-align: center;
     vertical-align: middle;
@@ -161,11 +166,26 @@ th{
     }
     .boite {
         margin: auto;
+        width: 450px;
+        height: 670px;
+    }
+    .boite img {
+        width: 450px;
+        height: 450px;
     }
 }
 
 @media(max-width: 500px){
     .pion {
         display: none;
+    }
+    .boite {
+        margin: auto;
+        width: 320px;
+        height: 540px;
+    }
+    .boite img {
+        width: 320px;
+        height: 320px;
     }
 }
