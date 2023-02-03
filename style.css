@@ -181,11 +181,11 @@ th{
     }
     .boite {
         margin: auto;
-        width: 400px;
-        height: 620px;
+        width: 350px;
+        height: 570px;
     }
     .boite img {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
     }
 }
