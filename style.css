@@ -166,12 +166,12 @@ th{
     }
     .boite {
         margin: auto;
-        width: 450px;
-        height: 670px;
+        width: 500px;
+        height: 720px;
     }
     .boite img {
-        width: 450px;
-        height: 450px;
+        width: 500px;
+        height: 500px;
     }
 }
 
@@ -181,11 +181,11 @@ th{
     }
     .boite {
         margin: auto;
-        width: 320px;
-        height: 540px;
+        width: 400px;
+        height: 620px;
     }
     .boite img {
-        width: 320px;
-        height: 320px;
+        width: 400px;
+        height: 400px;
     }
 }
