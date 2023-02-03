@@ -3,7 +3,7 @@ body {
 
     background-color: #f8f4e9;
     display: grid;
-    grid-template-columns: 1fr 18fr ;
+    grid-template-columns: 1fr 9fr ;
     min-height: 100vh;
 }
 
@@ -11,8 +11,46 @@ body {
     grid-column: 1;
     display: flex;
     flex-direction: column;
-    background-color: #c8703a ;
-    justify-content: space-evenly;
+    align-items: center;
+}
+
+.piece {
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: center;
+    background-position-y: center;
+    border: 1px solid black;
+    background-color: #c8703a;
+}
+
+.piece:nth-child(2n+1) {
+    background-color: #eec89a;
+}
+
+.piece#pion_blanc {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg);
+}
+
+.piece#cavalier_blanc {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg);
+}
+
+.piece#fou_blanc {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt45.svg);
+}
+
+.piece#tour_blanc {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt45.svg);
+}
+
+.piece#reine_blanc {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/15/Chess_qlt45.svg);
+}
+
+.piece#roi_blanc {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/42/Chess_klt45.svg);
 }
 
 nav{
@@ -42,6 +80,8 @@ header #titre {
     display: flex;
     vertical-align: center;
     justify-content: center;
+    color: red;
+    text-shadow: 2px 2px 4px gray;
 }
 
 header #titre img {
@@ -50,6 +90,11 @@ header #titre img {
 
 header > div {
     padding: 0 10px;
+}
+
+main {
+    background-image: url(https://www.welovesolo.com/wp-content/uploads/2014/10/p175aeururj346a0l5k1iq1130s9-details.jpg);
+    border: dashed green;
 }
 
 section{
@@ -99,17 +144,23 @@ th{
 
 #video{
 
-    padding: 50px 0 100px 0;
+    padding: 50px 0 0;
     text-align: center;
    
 }
 
-@media(max-width: 1029px){
+@media(max-width: 1100px){
     body {
         display: block;
     }
-    #bandeau{
+    #bandeau {
         display: none;
+    }
+    section {
+        display: block;
+    }
+    .boite {
+        margin: auto;
     }
 }
 
